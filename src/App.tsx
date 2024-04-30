@@ -6,14 +6,29 @@
  */
 
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, View } from 'react-native';
+import {
+  Image,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  View,
+  useColorScheme,
+} from 'react-native';
+import Header from './components/Header';
 
 function App(): React.JSX.Element {
+  const isDarkMode = useColorScheme() === 'dark';
   return (
-    <SafeAreaView>
-      <StatusBar />
+    <SafeAreaView className="bg-orange-50 flex flex-col flex-1 items-center">
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View />
+        <View>
+          <Header header="Upload a 6 month M-Pesa Statement" />
+          <Image
+            source={require('./images/wallet.png')}
+            className="mx-auto mt-12"
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
