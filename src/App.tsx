@@ -18,6 +18,7 @@ import Header from './components/Header';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const wallet = require('./images/wallet.png');
   return (
     <SafeAreaView className="bg-orange-50 flex flex-col flex-1 items-center">
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
@@ -25,7 +26,7 @@ function App(): React.JSX.Element {
         <View>
           <Header header="Upload a 6 month M-Pesa Statement" />
           <Image
-            source={require('./images/wallet.png')}
+            source={wallet}
             className="mx-auto mt-12"
           />
         </View>
