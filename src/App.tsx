@@ -14,6 +14,8 @@ import Header from './components/Header';
 import { StyledImage, StyledSafeAreaView } from './components/StyledComponents';
 import Features from './components/Features';
 import ProgressIndicator from './components/ProgressIndicator';
+import AppButton from './components/AppButton';
+import AppLineButton from './components/AppLineButton';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,6 +32,8 @@ function App(): React.JSX.Element {
           />
           <Features />
           <ProgressIndicator step={1} length={3} />
+          <AppButton title='Continue' onPress={() => console.log('continue here')} />
+          <AppLineButton title='Back to Login' onPress={() => console.log('continue here')} />
         </View>
       </ScrollView>
     </StyledSafeAreaView>
