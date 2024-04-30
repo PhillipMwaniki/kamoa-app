@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import Header from './components/Header';
 import { StyledImage, StyledSafeAreaView } from './components/StyledComponents';
+import Features from './components/Features';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,6 +27,7 @@ function App(): React.JSX.Element {
             source={wallet}
             className="mx-auto mt-12"
           />
+          <Features />
         </View>
       </ScrollView>
     </StyledSafeAreaView>
