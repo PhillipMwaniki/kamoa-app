@@ -2,6 +2,12 @@
 
 ## Phillip Mwaniki
 
+
+
+https://github.com/PhillipMwaniki/kamoa-app/assets/2037708/f312bcd3-e9b7-4cde-b8f5-e16da6ded951
+
+
+
 The app has been implemented using the latest react native cli with android being the choice of environment. You need to have:
 
 - JDK not greater than version 20. I used `20.0.1`
