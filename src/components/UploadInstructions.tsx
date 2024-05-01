@@ -2,7 +2,6 @@ import React from 'react'
 import { StyledText, StyledTextInput, StyledView } from 'src/components/StyledComponents';
 import UploadInstruction from './UploadInstruction';
 import UploadFile from './UploadFile';
-import { TextInput } from 'react-native';
 
 const UploadInstructions = () => {
     return (
