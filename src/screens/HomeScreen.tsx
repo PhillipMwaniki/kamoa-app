@@ -17,9 +17,11 @@ const HomeScreen = ({ navigation }: any) => {
                 className="mx-auto mt-12"
             />
             <Features />
-            <ProgressIndicator step={1} length={3} />
-            <AppButton title='Continue' onPress={() => [navigation.navigate("UploadMpesaStatementScreen")]} />
-            <AppLineButton title='Back to Login' onPress={() => console.log('continue here')} />
+            <StyledView className='w-full'>
+                <ProgressIndicator step={1} length={3} />
+                <AppButton title='Continue' onPress={() => [navigation.navigate("UploadMpesaStatementScreen")]} />
+                <AppLineButton title='Back to Login' onPress={() => console.log('continue here')} />
+            </StyledView>
         </StyledView>
     )
 }
