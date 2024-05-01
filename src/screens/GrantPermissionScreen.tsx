@@ -18,8 +18,8 @@ const GrantPermissionScreen = ({ navigation }: any) => {
             <PermissionList />
             <StyledView className='w-full'>
                 <ProgressIndicator step={3} length={3} />
-                <AppButton title='Continue' onPress={() => [navigation.navigate("UploadMpesaStatementScreen")]} />
-                <AppLineButton title='Back to Login' onPress={() => console.log('continue here')} />
+                <AppButton title='Accept & Continue' onPress={() => [navigation.navigate("EndWizard", { accepted: true })]} />
+                <AppLineButton title='Deny Access' onPress={() => [navigation.navigate("EndWizard", { accepted: false })]} />
             </StyledView>
         </StyledView>
     )

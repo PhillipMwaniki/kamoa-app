@@ -9,6 +9,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import HomeScreen from 'src/screens/HomeScreen';
 import UploadMpesaStatementScreen from 'src/screens/UploadMpesaStatementScreen';
 import GrantPermissionScreen from 'src/screens/GrantPermissionScreen';
+import EndWizard from 'src/screens/EndWizard';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ function App(): React.JSX.Element {
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="UploadMpesaStatementScreen" component={UploadMpesaStatementScreen} />
           <Stack.Screen name="GrantPermissionScreen" component={GrantPermissionScreen} />
+          <Stack.Screen name="EndWizard" component={EndWizard} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

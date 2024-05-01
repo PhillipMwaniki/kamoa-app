@@ -12,7 +12,7 @@ const AppButton: React.FunctionComponent<AppButtonProps> = ({ onPress, title }) 
     return (
         <StyledView className='flex items-center p-4 drop-shadow-sm'>
             <StyledTouchableOpacity onPress={onPress} className="bg-amber-300 px-6 py-4 rounded-md w-full items-center">
-                <StyledText className='text-black font-barlowCondensedBold text-[16px] font-bold'>{title}</StyledText>
+                <StyledText className='text-black font-barlowCondensedBold text-[16px] font-bold uppercase'>{title}</StyledText>
             </StyledTouchableOpacity>
         </StyledView>
     )
