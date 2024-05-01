@@ -18,6 +18,4 @@ I imported the font `Barlow Condensed` into the project, as I noted it's use on 
 
 The color codes were converted to tailwind specifics without changing the color tone.
 
-You will find an APK at the root of the project that can be downloaded to an android phone for testing.
-
 Clone the repo, and run `yarn` to install dependencies. Once this done, run `npx react-native run-android` from the terminal to run the application.
