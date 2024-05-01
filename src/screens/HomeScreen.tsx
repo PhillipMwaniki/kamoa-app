@@ -1,16 +1,16 @@
-import { View } from 'react-native'
 import React from 'react'
-import Header from '../components/Header';
-import { StyledImage } from '../components/StyledComponents';
-import Features from '../components/Features';
-import ProgressIndicator from '../components/ProgressIndicator';
-import AppButton from '../components/AppButton';
-import AppLineButton from '../components/AppLineButton';
+import Header from 'src/components/Header';
+import { StyledImage, StyledView } from 'src/components/StyledComponents';
+import Features from 'src/components/Features';
+import ProgressIndicator from 'src/components/ProgressIndicator';
+import AppButton from 'src/components/AppButton';
+import AppLineButton from 'src/components/AppLineButton';
 
-const wallet = require('../images/wallet.png');
-const HomeScreen = () => {
+const wallet = require('src/images/wallet.png');
+const HomeScreen = ({ navigation }: any) => {
+
     return (
-        <View>
+        <StyledView className="bg-orange-50 flex flex-col flex-1 items-center">
             <Header header="Upload a 6 month M-Pesa Statement" />
             <StyledImage
                 source={wallet}
@@ -18,9 +18,9 @@ const HomeScreen = () => {
             />
             <Features />
             <ProgressIndicator step={1} length={3} />
-            <AppButton title='Continue' onPress={() => console.log('continue here')} />
+            <AppButton title='Continue' onPress={() => [navigation.navigate("UploadMpesaStatementScreen")]} />
             <AppLineButton title='Back to Login' onPress={() => console.log('continue here')} />
-        </View>
+        </StyledView>
     )
 }
 

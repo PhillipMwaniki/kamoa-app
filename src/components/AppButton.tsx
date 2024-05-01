@@ -1,10 +1,11 @@
 
 import React from 'react'
 import { StyledText, StyledTouchableOpacity, StyledView } from './StyledComponents'
+import { GestureResponderEvent } from 'react-native'
 
 type AppButtonProps = {
     title: string
-    onPress: () => void
+    onPress: (event: GestureResponderEvent) => void
 }
 
 const AppButton: React.FunctionComponent<AppButtonProps> = ({ onPress, title }) => {
